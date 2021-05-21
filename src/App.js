@@ -1,9 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Image from 'material-ui-image'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -22,6 +24,14 @@ const useStyles = makeStyles((theme) => ({
       color: "#fff",
       fontSize: "6rem",
   },
+  aboutContainer: {
+    paddingTop: theme.spacing(3),
+  },
+  image: {
+    
+    height: '200',
+    width: '200'
+  },
 }));
 
 function App() {
@@ -38,6 +48,13 @@ function App() {
             <Box className={classes.hero}>
                 <Box>Under Construction</Box>
             </Box>
+            <Container className={classes.aboutContainer}>
+              <Typography variant="h2">About Me</Typography>
+              <img className = {classes.image} src="https://dummyimage.com/300x300/000/fff&text=Placeholder"/>
+              <Typography variant="body1" >
+                Storage shed, troughs feed bale manure, is garden wheat oats at augers. Bulls at rose garden cucumbers mice sunflower wheat in pig. Chainsaw foal hay hook, herbs at combine harvester, children is mallet. Goat goose hen horse. Pick up truck livestock, pets and storage shed, troughs feed bale manure, is garden wheat oats at augers. Lamb. Storage shed, troughs feed bale manure, is garden wheat oats at augers. Bulls at rose garden cucumbers mice sunflower wheat in pig. Chainsaw foal hay hook, herbs at combine harvester, children is mallet. Goat goose hen horse. Pick up truck livestock, pets and storage shed, troughs feed bale manure, is garden wheat oats at augers. Lamb.
+              </Typography>
+            </Container>
     </div>
   );
 }
