@@ -9,7 +9,7 @@ import Container from '@material-ui/core/Container';
 const useStyles = makeStyles((theme) => ({
     hero: {
         backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/Landing.jpg'})`,
-        minHeight: "90vh",
+        minHeight: "95vh",
         backgroundPosition: "center",
         backgroungRepeat: "no-repeat",
         backgroundSize: "cover",
