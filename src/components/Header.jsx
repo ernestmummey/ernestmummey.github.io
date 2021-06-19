@@ -32,9 +32,9 @@ const useStyles = makeStyles((theme) => ({
             <AppBar position ="fixed" className = {classes.appbar}>
                 <Toolbar>
                     <Typography className = {classes.header} variant= "h4" color= " primary">
-                        <Box className = {classes.box}>
+                        <Typography className = {classes.box}>
                             Ernest Mummey
-                        </Box>
+                        </Typography>
                         <Box className = {classes.headerNav}>
                         <Box>
                             About

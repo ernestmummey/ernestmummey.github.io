@@ -1,6 +1,8 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button'
+import Container from '@material-ui/core/Container';
 
 
 
@@ -18,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
         color: "#fff",
         fontSize: "6rem",
     },
+    heroContainer: {
+        margin: "0 auto",
+    },
 }))
 export default function Landing(){
     const classes = useStyles();
@@ -25,7 +30,10 @@ export default function Landing(){
     return (
         <div>
             <Box className={classes.hero}>
-                <Box>Under Construction</Box>
+                Under Construction
+                    <Button variant="contained" size="large" color="primary">
+                        Large
+                    </Button>
             </Box>
         </div>
     )
