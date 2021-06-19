@@ -5,21 +5,15 @@ import Landing from './components/Landing';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-
-
 import { CssBaseline } from '@material-ui/core';
 
 
-const useStyles = makeStyles((theme) => ({
-
-
-
-}));
+const useStyles = makeStyles((theme) => ({}));
 
 function App() {
   const classes = useStyles();
   return (
-    <div className="App">
+    <div className = {classes.root}>
       <CssBaseline/>
       <Header/>
       <Landing/>
