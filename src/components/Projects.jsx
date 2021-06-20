@@ -11,6 +11,12 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        minHeight: "95vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    card: {
         maxWidth: 345,
     },
     cardContainer: {
@@ -20,11 +26,10 @@ const useStyles = makeStyles((theme) => ({
 }))
 export default function Projects(){
     const classes = useStyles();
-    
     return (
-        <div>
+        <div className = {classes.root}>
             <Container className = {classes.cardContainer}>
-                <Card className={classes.root}>
+                <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
@@ -38,8 +43,8 @@ export default function Projects(){
                                 Lizard
                             </Typography>
                             <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
+                                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                                across all continents except Antarctica
                             </Typography>
                         </CardContent>
                     </CardActionArea>
@@ -52,7 +57,7 @@ export default function Projects(){
                         </Button>
                     </CardActions>
                 </Card>
-                    <Card className={classes.root}>
+                    <Card className={classes.card}>
                         <CardActionArea>
                             <CardMedia
                                 component="img"
@@ -66,8 +71,8 @@ export default function Projects(){
                                     Lizard
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                                across all continents except Antarctica
+                                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                                    across all continents except Antarctica
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -80,7 +85,7 @@ export default function Projects(){
                         </Button>
                     </CardActions>
                 </Card>
-                <Card className={classes.root}>
+                <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
