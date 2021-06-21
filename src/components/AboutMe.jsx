@@ -27,8 +27,7 @@ export default function AboutMe(){
     const classes = useStyles();
     
     return (
-        <div>
-            <Box className = {classes.root} boxShadow={3}>
+        <div className={classes.root} id="aboutMe" >
             <div>
                 <h1> About Me </h1>  
                 <h3>Brief</h3> 
@@ -41,7 +40,6 @@ export default function AboutMe(){
                         Storage shed, troughs feed bale manure, is garden wheat oats at augers. Bulls at rose garden cucumbers mice sunflower wheat in pig. Chainsaw foal hay hook, herbs at combine harvester, children is mallet. Goat goose hen horse. Pick up truck livestock, pets and storage shed, troughs feed bale manure, is garden wheat oats at augers. Lamb. Storage shed, troughs feed bale manure, is garden wheat oats at augers. Bulls at rose garden cucumbers mice sunflower wheat in pig. Chainsaw foal hay hook, herbs at combine harvester, children is mallet. Goat goose hen horse. Pick up truck livestock, pets and storage shed, troughs feed bale manure, is garden wheat oats at augers. Lamb.
                 </Typography>
             </div>
-            </Box>
         </div>
     )
 }
