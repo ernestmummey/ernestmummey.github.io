@@ -41,7 +41,7 @@ export default function Contact(){
 
 
     return (
-        <div className = {classes.root}>
+        <div className = {classes.root} id="contact">
             <h1 className={classes.heading}>Contact Page</h1>
             <form className={classes.form} noValidate autoComplete="off">
                 
