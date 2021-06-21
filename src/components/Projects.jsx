@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Projects(){
     const classes = useStyles();
     return (
-        <div>
+        <div id="projects">
             <Box className={classes.root} boxShadow={3}>
                 <Container className = {classes.cardContainer}>
                     <Card className={classes.card}>
