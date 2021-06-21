@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button'
 
@@ -38,7 +38,7 @@ export default function Landing(){
     
     return (
         <div>
-            <Box className={classes.hero}>
+            <Box className={classes.hero} boxShadow={3}>
                 <div className = {classes.heroContainer}>
                     <h1>
                         Under Construction
