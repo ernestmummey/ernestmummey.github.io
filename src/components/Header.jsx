@@ -6,7 +6,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 
 
-const useStyles = makeStyles((theme) => ({
+
+const useStyles = makeStyles(() => ({
     appbar: {
         backgroundColor: "#00664d",
     },
@@ -19,29 +20,27 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
     },
     projectBox: {
-        marginLeft: "25px",
-    },
-    hobbiesBox: {
+        color: "#FFFFFF",
+        textDecoration: "none",
         marginLeft: "25px",
     },
 }))
 
-    export default function Header(){
-    const classes = useStyles();
-    const [value, setValue] = React.useState(0);
 
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
+export default function Header(){
+    const classes = useStyles();
+
+
     return ( 
-        <div>
+        <div id="home">
             <AppBar position ="fixed" className = {classes.appbar}>
                 <Toolbar>
                     <Typography className={classes.header} variant= "h4" color= " primary">
-                        <Typography className = {classes.box}>
-                            Ernest Mummey
-                        </Typography>
                         <div>
+                            Ernest Mummey
+                        </div>
+                        <div>
+                            <a className={classes.projectBox} href="#home"> Home</a>
                             <a className={classes.projectBox} href="#aboutMe"> About</a>
                             <a className={classes.projectBox} href="#projects"> Projects</a>
                             <a className={classes.projectBox} href="#contact"> Contact</a>
@@ -51,4 +50,5 @@ const useStyles = makeStyles((theme) => ({
             </AppBar>
         </div>
     );
-    }
+}
+
