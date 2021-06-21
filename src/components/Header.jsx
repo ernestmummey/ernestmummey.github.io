@@ -1,10 +1,10 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import Image from 'material-ui-image'
 import Typography from '@material-ui/core/Typography';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Box from '@material-ui/core/Box';
+
+
 
 const useStyles = makeStyles((theme) => ({
     appbar: {
@@ -25,27 +25,27 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: "25px",
     },
 }))
+
     export default function Header(){
     const classes = useStyles();
+    const [value, setValue] = React.useState(0);
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
     return ( 
         <div>
             <AppBar position ="fixed" className = {classes.appbar}>
                 <Toolbar>
-                    <Typography className = {classes.header} variant= "h4" color= " primary">
+                    <Typography className={classes.header} variant= "h4" color= " primary">
                         <Typography className = {classes.box}>
                             Ernest Mummey
                         </Typography>
-                        <Box className = {classes.headerNav}>
-                        <Box>
-                            About
-                        </Box>
-                        <Box className = {classes.projectBox}>
-                            Projects
-                        </Box>
-                        <Box className = {classes.hobbiesBox}>
-                            Contact
-                        </Box>
-                        </Box>
+                        <div>
+                            <a className={classes.projectBox} href="#aboutMe"> About</a>
+                            <a className={classes.projectBox} href="#projects"> Projects</a>
+                            <a className={classes.projectBox} href="#contact"> Contact</a>
+                        </div>
                     </Typography>
                 </Toolbar>
             </AppBar>
