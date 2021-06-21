@@ -37,7 +37,7 @@ export default function Landing(){
     const classes = useStyles();
     
     return (
-        <div>
+        <div id={0}>
             <Box className={classes.hero} boxShadow={3}>
                 <div className = {classes.heroContainer}>
                     <h1>
