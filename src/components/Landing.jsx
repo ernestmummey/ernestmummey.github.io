@@ -41,7 +41,7 @@ export default function Landing(){
             <Box className={classes.hero} boxShadow={3}>
                 <div className = {classes.heroContainer}>
                     <h1>
-                        Under Construction
+                        Ernest Mummey
                     </h1>
                     <h3>
                         Full Stack Engineer
