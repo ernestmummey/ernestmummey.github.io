@@ -9,7 +9,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 const useStyles = makeStyles(() => ({
     appbar: {
-        backgroundColor: "#00664d",
+        background: "none",
     },
     header: {
         width: "100%",
