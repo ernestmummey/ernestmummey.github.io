@@ -7,7 +7,7 @@ import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles(() => ({
     root: {
-        backgroundColor: '#d8dddf',
+        backgroundColor: '#00151c',
         minHeight: '95vh',
         alignItems: "center",
         display: "flex",
