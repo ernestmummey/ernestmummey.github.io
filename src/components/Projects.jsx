@@ -12,6 +12,7 @@ import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        backgroundColor: "#001f29",
         minHeight: "95vh",
         display: "flex",
         alignItems: "center"
