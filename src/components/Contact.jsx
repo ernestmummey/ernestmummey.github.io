@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: '#d8dddf',
+        backgroundColor: '#00151c',
         minHeight: '95vh',
         display: "flex",
         justifyContent: "center",
