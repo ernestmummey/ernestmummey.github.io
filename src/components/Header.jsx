@@ -14,10 +14,15 @@ const useStyles = makeStyles(() => ({
     header: {
         width: "100%",
         display: "flex",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        fontFamily: "Nunito",
+        color: "FFFFFF",
     },
     headerNav: {
         display: "flex",
+    },
+    logo: {
+        color: "#03DAC6",
     },
     projectBox: {
         color: "#FFFFFF",
@@ -37,13 +42,13 @@ export default function Header(){
                 <Toolbar>
                     <Typography className={classes.header} variant= "h4" color= " primary">
                         <div>
-                            Ernest Mummey
+                            e<span className={classes.logo}>M</span>
                         </div>
                         <div>
                             <a className={classes.projectBox} href="#home"> Home</a>
                             <a className={classes.projectBox} href="#aboutMe"> About</a>
                             <a className={classes.projectBox} href="#projects"> Projects</a>
-                            <a className={classes.projectBox} href="#contact"> Contact</a>
+                            <a className={classes.projectBox} href="#connect"> Connect</a>
                         </div>
                     </Typography>
                 </Toolbar>
