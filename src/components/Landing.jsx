@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: "center",
         color: "#fff",
         fontSize: "4rem",
+        fontFamily: "Nunito",
     },
     heroContainer: {
         textAlign: "center",
@@ -26,10 +27,16 @@ const useStyles = makeStyles((theme) => ({
     textContainer: {
         margin: "0 auto",
     },
+    logo: {
+        color: "#03DAC6",
+    },
     button: {
         height: 70,
         width: 300,
-        fontSize: "2rem"
+        fontSize: "2rem",
+        backgroundColor: "#BB86FC",
+        color: "#000000",
+        fontFamily: "Nunito",
     },
 
 }))
@@ -37,11 +44,11 @@ export default function Landing(){
     const classes = useStyles();
     
     return (
-        <div id={0}>
+        <div id="home">
             <Box className={classes.hero} boxShadow={3}>
                 <div className = {classes.heroContainer}>
                     <h1>
-                        Ernest Mummey
+                        Ernest <span className={classes.logo}>M</span>ummey
                     </h1>
                     <h3>
                         Full Stack Engineer
