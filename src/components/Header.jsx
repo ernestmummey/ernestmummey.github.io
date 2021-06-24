@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
         display: "flex",
         justifyContent: "space-between",
         fontFamily: "Nunito",
-        color: "FFFFFF",
+        color: "#F8F8FF",
     },
     headerNav: {
         display: "flex",
@@ -25,7 +25,7 @@ const useStyles = makeStyles(() => ({
         color: "#03DAC6",
     },
     projectBox: {
-        color: "#FFFFFF",
+        color: "#F8F8FF",
         textDecoration: "none",
         marginLeft: "25px",
     },
