@@ -9,13 +9,18 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import Paper from '@material-ui/core/Paper'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: "#001f29",
+        backgroundColor: "#121212",
         minHeight: "95vh",
         display: "flex",
         alignItems: "center"
+    },
+    paper: {
+        maxWidth: 370,
+        backgroundColor: "2a2a2a"
     },
     card: {
         maxWidth: 345,
@@ -32,6 +37,7 @@ export default function Projects(){
             <Box className={classes.root} boxShadow={3}>
                 <Container className = {classes.cardContainer}>
                     <Card className={classes.card}>
+                        <Paper className={classes.paper}>
                         <CardActionArea>
                             <CardMedia
                                 component="img"
@@ -50,6 +56,7 @@ export default function Projects(){
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
+                        </Paper>
                         <CardActions>
                             <Button size="small" color="primary">
                                 Share
