@@ -53,7 +53,7 @@ export default function Landing(){
                     <h3>
                         Full Stack Engineer
                     </h3>
-                    <Button className = {classes.button} variant="contained" size="large" color="primary">
+                    <Button className = {classes.button} variant="contained" size="large">
                         Resume
                     </Button>
                 </div>
