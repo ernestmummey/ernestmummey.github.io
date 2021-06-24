@@ -9,7 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import Paper from '@material-ui/core/Paper'
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -18,16 +18,28 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         alignItems: "center"
     },
-    paper: {
-        maxWidth: 370,
-        backgroundColor: "2a2a2a"
-    },
     card: {
-        maxWidth: 345,
+        maxWidth: 350,
+        marginBottom: "40px",
+        backgroundColor: "#2a2a2a",
+        color: "#F8F8FF",
+        fontFamily: "Nunito",
     },
     cardContainer: {
         display: "flex",
         justifyContent: "space-evenly",
+        flexWrap: "wrap",
+    },
+    pythonImg:{
+        marginLeft: "27%",
+        height: 140
+    },
+    javaImg:{
+        marginLeft: "38%",
+        height: 140,
+    },
+    button:{
+        color: "#BB86FC",
     },
 }))
 export default function Projects(){
@@ -36,33 +48,27 @@ export default function Projects(){
         <div id="projects">
             <Box className={classes.root} boxShadow={3}>
                 <Container className = {classes.cardContainer}>
-                    <Card className={classes.card}>
-                        <Paper className={classes.paper}>
+                    <Card className={classes.card} >
                         <CardActionArea>
                             <CardMedia
                                 component="img"
-                                alt="Contemplative Reptile"
+                                alt="Stars over a mountain range"
                                 height="140"
-                                image="/static/images/cards/contemplative-reptile.jpg"
-                                title="Contemplative Reptile"
+                                image="/assets/tjl.png"
+                                title="TJL Construction"
                             />
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    Lizard
+                                <Typography gutterBottom variant="h5" component="h2" href="https://github.com/CodingDojoCollab/TJLConst-Master">
+                                    TJL Construction
                                 </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                                    across all continents except Antarctica
+                                <Typography variant="body2" color="#F8F8FF" component="p">
+                                    A responsive website that will be used and deployed for a construction company further down the road. The webiste was built with React, Bootstrap, Java backend and a MySQL db. 
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
-                        </Paper>
                         <CardActions>
-                            <Button size="small" color="primary">
-                                Share
-                            </Button>
-                            <Button size="small" color="primary">
-                                Learn More
+                            <Button size="large" className={classes.button}>
+                                GitHub
                             </Button>
                         </CardActions>
                     </Card>
@@ -72,25 +78,43 @@ export default function Projects(){
                                     component="img"
                                     alt="Contemplative Reptile"
                                     height="140"
-                                    image="/static/images/cards/contemplative-reptile.jpg"
+                                    image="/assets/portfolio.png"
                                     title="Contemplative Reptile"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Lizard
+                                        Portfilio Website
                                     </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                                        across all continents except Antarctica
+                                    <Typography variant="body2" color="#F8F8FF" component="p">
+                                        This is my portfolio responsive website. This site was built with React and Material UI. I wanted to do something different and continue to improve on reading documents and implement them into new projects.
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
                         <CardActions>
-                            <Button size="small" color="primary">
-                                Share
+                            <Button size="large" className={classes.button} href="https://ernestmummey.github.io/" >
+                                Link
                             </Button>
-                            <Button size="small" color="primary">
-                                Learn More
+                            <Button size="large"className={classes.button} href="https://github.com/ernestmummey/ernestmummey.github.io">
+                                GitHub
+                            </Button>
+                        </CardActions>
+                    </Card>
+                    <Card className={classes.card}>
+                        <CardActionArea>
+                            <img src="/assets/python.png" className={classes.pythonImg}/> 
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    Python Stack
+                                </Typography>
+                                <Typography variant="body2" color="#F8F8FF" component="p">
+                                    This repository holds several projects using a Python stack including a few Full Stack web applications. 
+                                    The stack includes Python, Flask, Bootstrap as well as MySQL db.
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="large" className={classes.button} href="https://github.com/ernestmummey/Python-Stack">
+                                Github
                             </Button>
                         </CardActions>
                     </Card>
@@ -100,25 +124,41 @@ export default function Projects(){
                                 component="img"
                                 alt="Contemplative Reptile"
                                 height="140"
-                                image="/static/images/cards/contemplative-reptile.jpg"
+                                image="/assets/mern.jpg"
                                 title="Contemplative Reptile"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    Lizard
+                                    MERN Stack
                                 </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                                    across all continents except Antarctica
+                                <Typography variant="body2" color="#F8F8FF" component="p">
+                                    This repository holds several projects using MERN stack including a few Full Stack web applications. 
+                                    The stack includes React, Express, Node.js, as well as MongoDB.
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="small" color="primary">
-                                Share
+                            <Button size="large" className={classes.button} href="https://github.com/ernestmummey/MERN-Stack">
+                                Github
                             </Button>
-                            <Button size="small" color="primary">
-                                Learn More
+                        </CardActions>
+                    </Card>
+                    <Card className={classes.card}>
+                        <CardActionArea>
+                        <img src="/assets/Java.png" className={classes.javaImg}/> 
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    Java Stack
+                                </Typography>
+                                <Typography variant="body2" color="#F8F8FF" component="p">
+                                    This repository holds several projects using a Java stack including a few Full Stack web applications. 
+                                    The stack includes Java Spring/Spring Boot, as well as MySQL db. 
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="large" className={classes.button} href="https://github.com/ernestmummey/Java-Stack-">
+                                Github
                             </Button>
                         </CardActions>
                     </Card>
