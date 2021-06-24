@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        color: "#fff",
+        color: "#F8F8FF",
         fontSize: "4rem",
         fontFamily: "Nunito",
     },
