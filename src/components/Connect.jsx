@@ -63,10 +63,10 @@ export default function AboutMe(){
                     <IconButton href="mailto:ernest.j.mummey@gmail.com">
                         <EmailIcon className={classes.iconButton}/>
                     </IconButton>
-                    <IconButton href="">
+                    <IconButton href="https://github.com/ernestmummey">
                         <GitHubIcon className={classes.iconButton} />
                     </IconButton>
-                    <IconButton href="">
+                    <IconButton href="https://www.linkedin.com/in/ernest-mummey/">
                         <LinkedInIcon className={classes.iconButton}/>
                     </IconButton>
                 </div>
