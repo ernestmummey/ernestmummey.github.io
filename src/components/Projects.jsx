@@ -58,7 +58,7 @@ export default function Projects(){
                                 title="TJL Construction"
                             />
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2" href="https://github.com/CodingDojoCollab/TJLConst-Master">
+                                <Typography gutterBottom variant="h5" component="h2" >
                                     TJL Construction
                                 </Typography>
                                 <Typography variant="body2" color="#F8F8FF" component="p">
@@ -67,7 +67,7 @@ export default function Projects(){
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="large" className={classes.button}>
+                            <Button size="large" className={classes.button} href="https://github.com/CodingDojoCollab/TJLConst-Master">
                                 GitHub
                             </Button>
                         </CardActions>
