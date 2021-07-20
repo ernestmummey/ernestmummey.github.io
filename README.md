@@ -1,4 +1,4 @@
-#ernestmummey.github.io
+# ernestmummey.github.io
 This is my personal website ! 
 
 ## Project Built
