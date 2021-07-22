@@ -10,13 +10,13 @@ import CopyrightIcon from '@material-ui/icons/Copyright';
 
 const useStyles = makeStyles(() => ({
     root: {
+        minWidth: '1000px',
         minHeight: "25vh",
         backgroundColor: '#121212',
     },
     paper: {
         display:"flex",
-        
-        // alignContent: "center",
+        minWidth: '1000px',
         flexDirection: 'column',
         margin: "0 auto",
         minHeight: "20vh",
