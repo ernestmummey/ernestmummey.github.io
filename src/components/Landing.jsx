@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button'
 const useStyles = makeStyles((theme) => ({
     hero: {
         backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/landingPage.jpg'})`,
+        minWidth: '1000px',
         minHeight: "95vh",
         backgroundPosition: "center",
         backgroungRepeat: "no-repeat",
