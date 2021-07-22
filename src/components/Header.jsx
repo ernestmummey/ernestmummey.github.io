@@ -10,10 +10,11 @@ import Toolbar from '@material-ui/core/Toolbar';
 const useStyles = makeStyles(() => ({
     appbar: {
         background: "none",
+        minWidth: '1000px',
     },
     header: {
-        width: "100%",
         display: "flex",
+        flex: 1,
         justifyContent: "space-between",
         fontFamily: "Nunito",
         color: "#F8F8FF",
