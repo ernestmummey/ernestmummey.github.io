@@ -1,55 +1,24 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
+import '../Style/Header.css';
 import Typography from '@material-ui/core/Typography';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 
 
-
-
-const useStyles = makeStyles(() => ({
-    appbar: {
-        background: "none",
-        minWidth: '1000px',
-    },
-    header: {
-        display: "flex",
-        flex: 1,
-        justifyContent: "space-between",
-        fontFamily: "Nunito",
-        color: "#F8F8FF",
-    },
-    headerNav: {
-        display: "flex",
-    },
-    logo: {
-        color: "#03DAC6",
-    },
-    projectBox: {
-        color: "#F8F8FF",
-        textDecoration: "none",
-        marginLeft: "25px",
-    },
-}))
-
-
-export default function Header(){
-    const classes = useStyles();
-
-
+const Header = (props) => {
     return ( 
         <div id="home">
-            <AppBar position ="fixed" className = {classes.appbar}>
+            <AppBar position ="fixed" className='header__appbar'>
                 <Toolbar>
-                    <Typography className={classes.header} variant= "h4" color= " primary">
+                    <Typography className='header__header' variant= "h4" color= " primary">
                         <div>
-                            e<span className={classes.logo}>M</span>
+                            e<span className='header__logo'>M</span>
                         </div>
                         <div>
-                            <a className={classes.projectBox} href="#home"> Home</a>
-                            <a className={classes.projectBox} href="#aboutMe"> About</a>
-                            <a className={classes.projectBox} href="#projects"> Projects</a>
-                            <a className={classes.projectBox} href="#connect"> Connect</a>
+                            <a className='header__projectBox' href="#home"> Home</a>
+                            <a className='header__projectBox' href="#aboutMe"> About</a>
+                            <a className='header__projectBox' href="#projects"> Projects</a>
+                            <a className='header__projectBox' href="#connect"> Connect</a>
                         </div>
                     </Typography>
                 </Toolbar>
@@ -57,4 +26,6 @@ export default function Header(){
         </div>
     );
 }
+
+export default Header;
 
