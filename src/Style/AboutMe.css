@@ -34,7 +34,7 @@
     margin-right: 20px;
     font-family: Nunito;
     color: #F8F8FF;
-    font-size: 2rem;
+    font-size: 1.75rem !important;
 }
 
 .aboutMe__span {
