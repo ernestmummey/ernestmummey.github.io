@@ -60,13 +60,13 @@ export default function AboutMe(){
             <Paper className={classes.paper}>
                 <h1 className={classes.connect}>Let's Connect</h1>
                 <div className={classes.iconBox}>
-                    <IconButton href="mailto:ernest.j.mummey@gmail.com">
+                    <IconButton target='_blank' href="mailto:ernest.j.mummey@gmail.com">
                         <EmailIcon className={classes.iconButton}/>
                     </IconButton>
-                    <IconButton href="https://github.com/ernestmummey">
+                    <IconButton target='_blank' href="https://github.com/ernestmummey">
                         <GitHubIcon className={classes.iconButton} />
                     </IconButton>
-                    <IconButton href="https://www.linkedin.com/in/ernest-mummey/">
+                    <IconButton  target='_blank' href="https://www.linkedin.com/in/ernest-mummey/">
                         <LinkedInIcon className={classes.iconButton}/>
                     </IconButton>
                 </div>
