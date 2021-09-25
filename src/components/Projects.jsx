@@ -40,7 +40,7 @@ const Projects = (props) =>{
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="large" className='projects__button' href="https://github.com/CodingDojoCollab/TJLConst-Master">
+                            <Button size="large" className='projects__button' href="https://github.com/CodingDojoCollab/TJLConst-Master" target="_blank">
                                 GitHub
                             </Button>
                         </CardActions>
@@ -64,10 +64,10 @@ const Projects = (props) =>{
                                 </CardContent>
                             </CardActionArea>
                         <CardActions>
-                            <Button size="large" className='projects__button' href="https://ernestmummey.github.io/" >
+                            <Button size="large" className='projects__button' target="_blank" href="https://ernestmummey.github.io/" >
                                 Link
                             </Button>
-                            <Button size="large"className='projects__button' href="https://github.com/ernestmummey/ernestmummey.github.io">
+                            <Button size="large"className='projects__button' target="_blank" href="https://github.com/ernestmummey/ernestmummey.github.io">
                                 GitHub
                             </Button>
                         </CardActions>
@@ -89,7 +89,7 @@ const Projects = (props) =>{
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="large" className='projects__button' href="https://github.com/ernestmummey/Python-Stack">
+                            <Button size="large" className='projects__button' target="_blank" href="https://github.com/ernestmummey/Python-Stack">
                                 Github
                             </Button>
                         </CardActions>
@@ -114,7 +114,7 @@ const Projects = (props) =>{
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="large" className='projects__button' href="https://github.com/ernestmummey/MERN-Stack">
+                            <Button size="large" className='projects__button' target="_blank" href="https://github.com/ernestmummey/MERN-Stack">
                                 Github
                             </Button>
                         </CardActions>
@@ -137,7 +137,7 @@ const Projects = (props) =>{
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="large" className='projects__button' href="https://github.com/ernestmummey/Java-Stack-">
+                            <Button size="large" className='projects__button' target="_blank" href="https://github.com/ernestmummey/Java-Stack-">
                                 Github
                             </Button>
                         </CardActions>
