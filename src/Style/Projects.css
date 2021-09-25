@@ -1,0 +1,41 @@
+.projects__root {
+    min-width: 1000px;
+    background-color: #121212 !important;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+}
+
+.projects__card {
+    max-width: 350px;
+    margin-bottom: 40px;
+    background-color: #2a2a2a !important;
+    color: #F8F8FF !important;
+    font-family: Nunito !important;
+}
+
+.projects__cardContainer {
+    display: flex !important;
+    justify-content: space-evenly !important;
+    flex-wrap: wrap !important;
+}
+
+.projects__pythonImg {
+    margin-left: 27%;
+    height: 140px;
+}
+
+.projects__javaImg {
+    margin-left: 38%;
+    height: 140px;
+}
+
+.projects__button {
+    color: #BB86FC !important;
+}
+
+.projects__fontSize {
+    font-size: 1.1rem !important;
+}
+
+
