@@ -1,0 +1,36 @@
+.landing__image {
+    background-image: url('../assets/landingPage.jpg');
+    min-width: 1000px;
+    min-height: 95vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F8F8FF;
+    font-size: 4rem;
+    font-family: "Nunito";
+}
+
+.landing__heroContainer {
+    text-align: center;
+}
+
+.landing__textContainer {
+    margin: 0 auto;
+}
+
+.landing__logo {
+    color: #03DAC6;
+}
+
+.landing__button {
+    height: 70px;
+    width: 300px;
+    font-size: 2rem !important;
+    background-color: #BB86FC !important;
+    color: #000000 !important;
+    font-family: Nunito !important;
+}
