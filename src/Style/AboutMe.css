@@ -1,0 +1,43 @@
+.aboutMe__root {
+    max-width: none;
+    min-width: 1000px;
+    background-color: #121212;
+    min-height: 95vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.aboutMe__avatarPic {
+    height: 500px !important;
+    width: 500px !important;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.aboutMe__about {
+    font-family: Nunito;
+    font-size: 2rem;
+    color: #F8F8FF;
+}
+
+.aboutMe__description {
+    font-family: Nunito;
+    font-size: 2rem;
+    color: #F8F8FF;
+}
+
+.aboutMe__body {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Nunito;
+    color: #F8F8FF;
+    font-size: 2rem;
+}
+
+.aboutMe__span {
+    font-style: italic;
+    color: #03DAC6;
+}
