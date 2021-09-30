@@ -1,13 +1,31 @@
+// Establishing global elements
+:root {
+    --ff--primary: 'League Spartan';
+    --ff-accent: 'Libre Baskerville', serif; 
+}
+
+
+*, 
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+
+
+
 
 body {
-    background-color: black;
+    background-color: #0A0A0A;
     height: 100%;
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
 }
 
 .container {
     border: blue dotted 2px;
     min-height: calc(100vh - .3em);
-    width: 95%;
+    min-width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -19,11 +37,16 @@ body {
     position: relative;
     h1 {
         color: white;
-        font-family: 'League Spartan';
-        font-size: 4em;
+        font-family: var(--ff--primary);
+        font-size: 5em;
+        font-weight: 100;
+
     }
 
-    h4 {
-        color: white;
+    h6 {
+        font-family: var(--ff-accent);
+        color: snow;
+        font-size: 1.5em;
+        font-style: oblique;
     }
 }
