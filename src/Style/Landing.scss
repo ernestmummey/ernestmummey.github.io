@@ -1,8 +1,6 @@
 // Establishing global elements
-:root {
-    --ff--primary: 'League Spartan';
-    --ff-accent: 'Libre Baskerville', serif; 
-}
+$ff--primary: 'League Spartan';
+$ff-accent: 'Libre Baskerville', serif; 
 
 
 *, 
@@ -11,7 +9,9 @@
     box-sizing: border-box;
 }
 
-
+Header {
+    position: absolute;
+}
 
 
 body {
@@ -22,31 +22,41 @@ body {
     line-height: 1.6;
 }
 
-.container {
+.wrapper {
     border: blue dotted 2px;
     min-height: calc(100vh - .3em);
-    min-width: 95%;
+    min-width: 100%;
     margin: 0 auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.container {
+    position: relative;
+    min-height: 100rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 // common break points 
 .introduction {
     border: purple solid 2px;
     position: relative;
     h1 {
         color: white;
-        font-family: var(--ff--primary);
+        font-family: $ff--primary;
         font-size: 5em;
         font-weight: 100;
 
     }
 
     h6 {
-        font-family: var(--ff-accent);
+        font-family: $ff-accent;
         color: snow;
         font-size: 1.5em;
         font-style: oblique;
     }
 }
+

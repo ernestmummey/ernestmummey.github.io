@@ -1,19 +1,22 @@
 import React from 'react';
-
-import '../Style/Landing.scss'
+import Header from '../components/Header';
+import '../Style/Landing.scss';
 
 
 
 const Landing = (props) => {
     return (
-        <div className ='container'>
-            <div className="introduction">
-                <h1>Ernest Mummey</h1>
-                    <div>
-                        <h6>Full Stack Engineer</h6>
-                    </div>
+        <div className="wrapper"> 
+            <Header/>       
+            <div className ='container'>
+                <div className="introduction">
+                        <h1>Ernest Mummey</h1>
+                        <div>
+                            <h6>Full Stack Engineer</h6>
+                        </div>
+                </div>
             </div>
-        </div>
+        </div> 
     )
 }
 
