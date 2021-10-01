@@ -8,7 +8,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 const Header = (props) => {
     return ( 
         <div id="home">
-            <AppBar position ="fixed" className='header__appbar'>
+            <AppBar position ="fixed" className='header__appbar' elevation={0}>
                 <Toolbar>
                     <Typography className='header__header' variant= "h4" color= " primary">
                         <div>
