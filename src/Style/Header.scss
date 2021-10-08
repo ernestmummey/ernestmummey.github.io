@@ -3,50 +3,42 @@ $ff--primary: 'League Spartan';
 $ff-accent: 'Libre Baskerville', serif; 
 
 
-.header__wrapper {
-    position: relative;
-    width: 100%;
-    min-height: 8rem;
-}
-
 .header__container {
     border: green dotted 2px;
-    max-width: 70%;
+    min-width: 100%;
+    // min-height: 8rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
+    // text-align: center;
+    // margin: 0 auto;
+    z-index: 1030;
+    margin-top: 1.5em;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
-@media (min-width: 768px) {
-
-    .header__wrapper {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-
-
 .logo {
+    // width: 8rem;
     color: whitesmoke;
     font-family: $ff-accent;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
+
 
 
 ul {
-    position: relative;
+    // position: relative;
     // right: 20%;
     display: flex;
-    justify-content: space-between;
+    
+    // justify-content: space-between;
     list-style-type: none;
     
     li {
         margin-left: 5rem;
         color: white;
         font-family: $ff-accent;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 }
