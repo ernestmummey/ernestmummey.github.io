@@ -5,13 +5,14 @@ $ff-accent: 'Libre Baskerville', serif;
 
 .header__container {
     border: green dotted 2px;
-    min-width: 100%;
+    width: 85%;
+    // min-width: 1600px;
     // min-height: 8rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     // text-align: center;
-    // margin: 0 auto;
+    margin: 0 auto;
     z-index: 1030;
     margin-top: 1.5em;
     padding-left: 1.5rem;
