@@ -10,7 +10,7 @@ const Landing = (props) => {
             <Header/>       
             <div className ='container'>
                 <div className="introduction">
-                        <h1>Ernest Mummey</h1>
+                        <h1>Ernest <span>M</span>ummey</h1>
                         <div>
                             <h6>Full Stack Engineer</h6>
                         </div>
