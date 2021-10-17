@@ -24,31 +24,40 @@ $ff-accent: 'Libre Baskerville', serif;
     // width: 8rem;
     color: whitesmoke;
     font-family: $ff-accent;
-    font-size: 1.1em;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+p {
+    // color: #e0e0e0;
+
+    span {
+        color: #03DAC6;
+    }
 }
 
 
-
 ul {
-    // position: relative;
-    // right: 20%;
     display: flex;
-    
-    // justify-content: space-between;
     list-style-type: none;
     
     li {
         margin-left: 5rem;
-        color: white;
+        color: #bdbdbd;
         font-family: $ff-accent;
-        font-size: 1.1em;
+        font-size: 1.2em;
+        font-weight: 900;
+        
     }
 }
 
 li:hover{
-    width: 100%;
-    height: 5px;
-    background-color: aquamarine;
+    // position: relative;
+    // border-bottom: .2em solid #00fee5;
+    transition: transform 1000ms ease-in;
+    color: white;
+    box-shadow: inset 0 -5px  #00fee5;
+    
 }
 
 // li:hover li::after{
