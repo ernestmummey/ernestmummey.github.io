@@ -1,7 +1,7 @@
 // Establishing global elements
+//text
 $ff--primary: 'League Spartan';
 $ff-accent: 'Libre Baskerville', serif; 
-
 
 *, 
 * ::before,
@@ -24,7 +24,7 @@ body {
 .wrapper {
     border: blue dotted 2px;
     background-color: #0A0A0A;
-    min-height: calc(100vh - .3em);
+    min-height: calc(100vh - .1em);
     min-width: 100%;
     margin: 0 auto;
     padding-left: 3rem;
@@ -43,23 +43,44 @@ Header {
     position: fixed;
 }
 
-// common break points 
 .introduction {
     border: purple solid 2px;
     position: relative;
+
     h1 {
         color: white;
         font-family: $ff--primary;
         font-size: 5em;
         font-weight: 100;
 
+        span {
+            color: #03DAC6;
+        }
     }
 
     h6 {
         font-family: $ff-accent;
-        color: snow;
+        color: #e0e0e0;;
         font-size: 1.5em;
-        font-style: oblique;
+        font-style: italic;
+        font-weight: 100;
     }
 }
 
+
+
+// common break points 
+    // 0 - 600px phone
+    // 600 - 900px tablet portrait
+    // 900 - 1200px tablet landscape
+    // 1200 - 1600px normal laptop
+    // 1600px + Large Desktop
+    //320px — 480px: Mobile devices
+    //481px — 768px: iPads, Tablets
+    //769px — 1024px: Small screens, laptops
+    //1025px — 1200px: Desktops, large screens
+    //1201px and more —  Extra large screens, TV
+
+@media only screen {
+    
+}
