@@ -9,11 +9,6 @@ $ff-accent: 'Libre Baskerville', serif;
     box-sizing: border-box;
 }
 
-Header {
-    position: absolute;
-}
-
-
 body {
     height: 100%;
     font-weight: 400;
@@ -22,26 +17,30 @@ body {
 }
 
 .wrapper {
-    border: blue dotted 2px;
+    // border: blue dotted 2px;
     background-color: #0A0A0A;
-    min-height: calc(100vh - .1em);
+    height: 100vh;
+    // min-height: calc(100vh - .1em);
     min-width: 100%;
-    margin: 0 auto;
+    // margin: 0 auto;
     padding-left: 3rem;
     padding-right: 3rem;
 }
 
+Header {
+    position: fixed;
+    margin: 0 auto;
+}
+
 .container {
     position: relative;
-    min-height: 100rem;
+    // min-height: 100rem;
+    min-height: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-Header {
-    position: fixed;
-}
 
 .introduction {
     border: purple solid 2px;
@@ -67,7 +66,12 @@ Header {
     }
 }
 
-
+@media screen and (max-width: 2000px) {
+    header {
+        min-width: 1500px;
+    }
+    
+}
 
 // common break points 
     // 0 - 600px phone
@@ -81,6 +85,3 @@ Header {
     //1025px — 1200px: Desktops, large screens
     //1201px and more —  Extra large screens, TV
 
-@media only screen {
-    
-}
